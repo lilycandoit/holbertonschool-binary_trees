@@ -26,7 +26,7 @@ static int calculate_height(const binary_tree_t *tree)
 
 /**
  * binary_tree_balance - to measure the balance factor
- * @tree - pointer to root node of the tree
+ * @tree: pointer to root node of the tree
  * Return: the balance in int or 0 if tree is NULL
  */
 
