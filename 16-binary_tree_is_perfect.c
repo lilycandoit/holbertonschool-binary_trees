@@ -33,11 +33,12 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
 {
 	size_t left_height, right_height;
 
-	left_height = get_height(tree->left);
-	right_height = get_height(tree->right);
-
+	/* check if tree is NULL first */
 	if (tree == NULL)
 		return (0);
+
+	left_height = get_height(tree->left);
+	right_height = get_height(tree->right);
 
 	/* if it's a leaf, then it's perfect */
 	if (tree->left == NULL && tree->right == NULL)
